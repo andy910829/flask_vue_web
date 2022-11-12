@@ -283,7 +283,7 @@ if __name__ == "__main__":
     t1 = threading.Thread(target=verification.delete_code_everyday)
     t1.daemon=True
     t1.start()
-    socketio.run(app,port=8000,debug = True)
+    socketio.run(app,host='172.104.101.224',port=8000,debug = True)
 
 
 
